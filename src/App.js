@@ -5,7 +5,7 @@ import Favourites from './Pages/Favourites';
 import MainNavigation from './Components/Layout/MainNavigation';
 function App() {
   return (
-    <>
+    <div>
       <MainNavigation />
       <Switch>
         <Route path='/' exact>
@@ -19,7 +19,7 @@ function App() {
         </Route>
       </Switch>
 
-    </>
+    </div>
   );
 }
 
