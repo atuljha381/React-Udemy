@@ -12,10 +12,10 @@ export default function MainNavigation() {
                         <Link to='/'>All Meetup</Link>
                     </li>
                     <li>
-                        <Link to='/new'>New Meetup</Link>
+                        <Link to='/new'>Add New Meetup</Link>
                     </li>
                     <li>
-                        <Link to='/fav'>Favourites</Link>
+                        <Link to='/fav'>My Favourites</Link>
                     </li>
                 </ul>
             </nav>
