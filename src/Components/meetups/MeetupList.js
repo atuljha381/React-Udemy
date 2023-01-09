@@ -4,7 +4,7 @@ import classes from "./MeetupItem.module.css";
 export default function MeetupList(props) {
     return (
         <ul className={classes.list}>
-            {props.meetup.map((meetup) => (
+            {props.meetups.map((meetup) => (
                 <MeetupItem
                     key={meetup.id}
                     id={meetup.id}

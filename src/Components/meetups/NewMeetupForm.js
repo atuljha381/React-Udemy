@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import classes from './NewMeetupForm.module.css'
 import Card from '../ui/Card'
-export default function NewMeetupForm() {
+export default function NewMeetupForm(props) {
     const titleInputRef = useRef()
     const imageInputRef = useRef()
     const addressInputRef = useRef()
@@ -22,7 +22,7 @@ export default function NewMeetupForm() {
             description: enteredDescription
         }
 
-        console.log(meetupData)
+        props.onAddMeetup(meetupData);
     }
     return (
         <Card>
@@ -43,7 +43,7 @@ export default function NewMeetupForm() {
                     <label htmlFor="description">Meetup Description</label>
                     <textarea id="description" rows="5" required ref={descInputRef}></textarea>
                 </div>
-                <div className={classes.action}>
+                <div className={classes.actions}>
                     <button>Add Meetup</button>
                 </div>
             </form>
